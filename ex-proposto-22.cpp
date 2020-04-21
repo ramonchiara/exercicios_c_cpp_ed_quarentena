@@ -51,8 +51,8 @@ struct Sala {
             getline(cin, p2);
 
             alunos[i].nome = nome;
-            alunos[i].p1 = atoi(p1.c_str());
-            alunos[i].p2 = atoi(p2.c_str());
+            alunos[i].p1 = atof(p1.c_str());
+            alunos[i].p2 = atof(p2.c_str());
         }
     }
 

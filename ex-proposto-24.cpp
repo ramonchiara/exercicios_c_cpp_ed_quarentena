@@ -1,7 +1,6 @@
 #include <iomanip>
 #include <iostream>
 #include <stdlib.h>
-
 #include "ListaLinearVetor.h"
 
 using namespace std;
@@ -39,8 +38,8 @@ struct Aluno {
         cout << "P2: ";
         getline(cin, p2s);
 
-        p1 = atoi(p1s.c_str());
-        p2 = atoi(p2s.c_str());
+        p1 = atof(p1s.c_str());
+        p2 = atof(p2s.c_str());
     }
 
     void imprime()
