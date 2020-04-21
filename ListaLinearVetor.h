@@ -20,10 +20,18 @@ struct Lista {
 
     bool insere(T elemento)
     {
+        return insere(elemento, N);
+    }
+
+    bool insere(T elemento, int posicao)
+    {
         bool sucesso = false;
 
-        if(N < MAX) {
-            vetor[N] = elemento;
+        if(N < MAX && posicao >= 0 && posicao <= N) {
+            for(int i = N; i > posicao; i--) {
+                vetor[i] = vetor[i - 1];
+            }
+            vetor[posicao] = elemento;
             N++;
             sucesso = true;
         }
